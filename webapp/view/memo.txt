@@ -1,0 +1,55 @@
+Sapui5 
+
+https://developers.sap.com/group.cp-frontend-ui5-1.html 
+
+ 
+
+参考：https://developers.sap.com/mission.launchpad-cf.html 
+
+ 
+
+更新系 
+
+https://qiita.com/tami/items/535908494193ad2181f4 
+
+ 
+
+ 
+
+Deploy 
+
+https://cap.cloud.sap/docs/advanced/deploy-to-cloud 
+
+ 
+
+mbt build -t ./ 
+
+cf deploy sapui5_0.0.1.mtar 
+
+ 
+
+cf install-plugin -r CF-Community "html5-plugin"cf html5-list -di sapui5-dest-srv -u --runtime cpp 
+
+Getting list of HTML5 applications available via destinations in org edf1970ctrial / space dev as takao.kumoi@ye-digital.com... 
+
+OK 
+
+  
+
+name     version   app-host-id                            service name   destination name   last changed                    url    
+
+sapui5   1.0.0     82cc3231-82f9-4d94-a6f4-f4e487117d0c   sapui5         sapui5_repo_host   Tue, 08 Jun 2021 06:09:34 GMT   https://edf1970ctrial.cpp.cfapps.us10.hana.ondemand.com/56357b14-0dd3-463a-bdf7-f8c846d3f8a4.sapui5.sapui5-1.0.0/ 
+
+ 
+
+ 
+
+Subaccount: trial - HTML5 Applications - sapui5 
+
+https://edf1970ctrial.launchpad.cfapps.us10.hana.ondemand.com/56357b14-0dd3-463a-bdf7-f8c846d3f8a4.sapui5.sapui5-1.0.0/index.html 
+
+ 
+
+ 
+
+ 

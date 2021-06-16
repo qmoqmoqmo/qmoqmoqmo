@@ -1,0 +1,53 @@
+<mvc:View controllerName="sapui5.controller.List" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page id="listPage" title="{i18n>ListTitle}" >
+		<subHeader>
+
+			<Toolbar>
+				<ToolbarSpacer/>
+					<SearchField search="handleSearch"/>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Reset" press="onReset" />
+				<Button type="Accept" text="Update" press="onUpdate" />
+				<ToolbarSpacer/>
+				<Button type="Accept" text="New..." press="onPress" />
+				<ToolbarSpacer/>
+			</Toolbar>
+
+		</subHeader>
+
+		<core:InvisibleText id="defaultButtonDescription" text="Description of default button goes here."/>
+
+        <List id="list" items="{/CapBusinessPartner}">
+			<items>
+				<ObjectListItem
+					press="handleListItemPress"
+					type="Active"
+					title="{firstName} : [{ID}]"
+					number="{
+						parts: [
+							{path: 'currency'}
+						],
+						type: 'sap.ui.model.type.String',
+						formatOptions: { showMeasure: false }
+					}"
+					numberUnit="{country}">
+					<attributes>
+						<ObjectAttribute text="{phoneNumber}"/>
+						<ObjectAttribute text="{eMailAddress}"/>
+						<ObjectAttribute title="{postalCode}"
+							text="{
+								parts: [
+									{path: 'city'},
+									{path: 'street'},
+									{path: 'building'},
+									{path: 'country'}
+								],
+								formatter: '.formatAddr'
+							}"/>
+					</attributes>
+				</ObjectListItem>
+			</items>
+        </List>
+        
+    </Page>
+</mvc:View>

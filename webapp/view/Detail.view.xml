@@ -1,0 +1,57 @@
+<mvc:View controllerName="sapui5.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:form="sap.ui.layout.form"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout">
+
+	<Page id="detail" title="{ID}" showNavButton="true" navButtonPress="handleNavButtonPress" >
+		<form:SimpleForm editable="true" layout="ColumnLayout">
+			<Label text="firstName" labelFor="input-firstName" design="Bold"/>
+			<Input id="input-firstName" required="false" value="{firstName}" editable="true"/>
+
+			<Label text="city" labelFor="input-city"/>
+			<Input id="input-city" required="false" value="{city}" editable="true"/>
+
+			<Label text="postalCode" labelFor="input-postalCode"/>
+			<Input id="input-postalCode" required="false" value="{postalCode}" editable="true"/>
+
+			<Label text="street" labelFor="input-street"/>
+			<Input id="input-street" required="false" value="{street}" editable="true"/>
+
+			<Label text="building" labelFor="input-building"/>
+			<Input id="input-building" required="false" value="{building}" editable="true"/>
+
+			<Label text="country" labelFor="input-country"/>
+			<Input id="input-country" required="false" value="{country}" editable="true"/>
+
+			<Label text="addressType" labelFor="input-addressType"/>
+			<Input id="input-addressType" required="false" value="{addressType}" editable="false"/>
+
+			<Label text="eMailAddress" labelFor="input-eMailAddress"/>
+			<Input id="input-eMailAddress" required="false" value="{eMailAddress}" editable="true"/>
+
+			<Label text="webAddress" labelFor="input-webAddress"/>
+			<Input id="input-webAddress" required="false" value="{webAddress}" editable="true"/>
+
+			<Label text="phoneNumber" labelFor="input-phoneNumber"/>
+			<Input id="input-phoneNumber" required="false" value="{phoneNumber}" editable="true"/>
+
+			<Label text="faxNumber" labelFor="input-faxNumber"/>
+			<Input id="input-faxNumber" required="false" value="{faxNumber}" editable="true"/>
+
+			<Label text="legalForm" labelFor="input-legalForm"/>
+			<Input id="input-legalForm" required="false" value="{legalForm}" editable="true"/>
+
+			<Label text="currency" labelFor="input-currency"/>
+			<Input id="input-currency" required="false" value="{currency}" editable="true"/>
+
+			<Label text="businessPartnerRole" labelFor="input-businessPartnerRole"/>
+			<Input id="input-businessPartnerRole" required="false" value="{businessPartnerRole}" editable="false"/>
+
+			<Label text="SourceDestination" labelFor="input-SourceDestination"/>
+			<Input id="input-SourceDestination" required="false" value="{SourceDestination}" editable="false"/>
+
+		</form:SimpleForm>
+	</Page>
+</mvc:View>

@@ -1,0 +1,62 @@
+<mvc:View controllerName="sapui5.controller.Create" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<Page id="create" title="" showNavButton="true" navButtonPress="handleNavButtonPress" >
+		<subHeader>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Set" press="onSet" />
+				<Button type="Accept" text="Save" press="onPress" />
+				<ToolbarSpacer/>
+			</Toolbar>
+		</subHeader>
+		<l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<Label text="ID" labelFor="input-ID" design="Bold"/>
+		<Input id="input-ID" required="false" editable="true"/>
+
+		<Label text="firstName" labelFor="input-firstName" design="Bold"/>
+		<Input id="input-firstName" required="false" editable="true"/>
+
+		<Label text="city" labelFor="input-city"/>
+		<Input id="input-city" required="false" editable="true"/>
+
+		<Label text="postalCode" labelFor="input-postalCode"/>
+		<Input id="input-postalCode" required="false" editable="true"/>
+
+		<Label text="street" labelFor="input-street"/>
+		<Input id="input-street" required="false" editable="true"/>
+
+		<Label text="building" labelFor="input-building"/>
+		<Input id="input-building" required="false" editable="true"/>
+
+		<Label text="country" labelFor="input-country"/>
+		<Input id="input-country" required="false" editable="true"/>
+
+		<Label text="addressType" labelFor="input-addressType"/>
+		<Input id="input-addressType" required="false" editable="true"/>
+
+		<Label text="currency" labelFor="input-currency"/>
+		<Input id="input-currency" required="false" editable="true"/>
+
+		<Label text="businessPartnerRole" labelFor="input-businessPartnerRole"/>
+		<Input id="input-businessPartnerRole" required="false"  editable="true"/>
+
+		<Label text="eMailAddress" labelFor="input-eMailAddress"/>
+		<Input id="input-eMailAddress" required="false"  editable="true"/>
+
+		<Label text="webAddress" labelFor="input-webAddress"/>
+		<Input id="input-webAddress" required="false"  editable="true"/>
+
+		<Label text="phoneNumber" labelFor="input-phoneNumber"/>
+		<Input id="input-phoneNumber" required="false" editable="true"/>
+
+		<Label text="faxNumber" labelFor="input-faxNumber"/>
+		<Input id="input-faxNumber" required="false" editable="true"/>
+
+		<Label text="legalForm" labelFor="input-legalForm"/>
+		<Input id="input-legalForm" required="false" value="{legalForm}" editable="true"/>
+
+		<Label text="SourceDestination" labelFor="input-SourceDestination"/>
+		<Input id="input-SourceDestination" required="false" editable="false"/>
+
+		</l:VerticalLayout>
+	</Page>
+</mvc:View>
